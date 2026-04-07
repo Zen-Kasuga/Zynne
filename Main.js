@@ -12,9 +12,9 @@ const loginBox = document.querySelector(".loginBox");
 
 const shopNow = document.getElementById("shopNow");
 
-const clothesBtn = document.getElementById("clothesBtn");
-const shoesBtn = document.getElementById("shoesBtn");
-const othersBtn = document.getElementById("othersBtn");
+const clothesBtns = document.querySelectorAll("#clothesBtn");
+const shoesBtns = document.querySelectorAll("#shoesBtn");
+const othersBtns = document.querySelectorAll("#othersBtn");
 
 const headerSignUp = document.getElementById("headerSignUp");
 
@@ -65,20 +65,23 @@ shopNow.addEventListener("click", () => {
 
 
 // --- CATEGORY FILTERS ---
-clothesBtn.addEventListener("click", (e) => {
+clothesBtns.forEach(btn => btn.addEventListener("click", (e) => {
 	e.preventDefault();
+	menuBox.classList.remove("active");
 	window.location.href = "Home.html?category=clothes";
-});
+}));
 
-shoesBtn.addEventListener("click", (e) => {
+shoesBtns.forEach(btn => btn.addEventListener("click", (e) => {
 	e.preventDefault();
+	menuBox.classList.remove("active");
 	window.location.href = "Home.html?category=shoes";
-});
+}));
 
-othersBtn.addEventListener("click", (e) => {
+othersBtns.forEach(btn => btn.addEventListener("click", (e) => {
 	e.preventDefault();
+	menuBox.classList.remove("active");
 	window.location.href = "Home.html?category=others";
-});
+}));
 
 
 // --- HEADER SIGN UP LINK ---
