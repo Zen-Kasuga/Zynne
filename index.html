@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<title>Zynne</title>
+</head>
+<body>
+	<div class="sticky">
+		<p class="header">
+			Sign up and get 20% off to your first order. <a href="#" id="headerSignUp">Sign Up Now</a>
+		</p>
+
+		<div class="navPanel">
+			<div class="leftGroup">
+				<div class="navLeft">
+					<ul>
+						<li class="fas fa-bars"></li>
+					</ul>
+				</div>
+
+				<h2 class="shopName">ZYNNE</h2>
+			</div>
+
+			<div class="menuBoxPC">
+				<ul class="menu">
+					<li><a href="#" id="womenBtn">Women</a></li>
+					<li><a href="#" id="menBtn">Men</a></li>
+					<li><a href="#" id="kidsBtn">Kids</a></li>
+				</ul>
+			</div>
+
+			<div class="navRight">
+				<ul class="nav">
+					<li class="fas fa-user loginBtn"></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="menuBox">
+		<ul class="menu">
+			<li><a href="#" id="womenBtn">Women</a></li>
+			<li><a href="#" id="menBtn">Men</a></li>
+			<li><a href="#" id="kidsBtn">Kids</a></li>
+		</ul>
+	</div>
+
+	<div class="contents">
+		
+		<div class="loginBox">
+			<div class="loginForm">
+				<div class="loginContent">
+					<p class="formLabel">Sign Up</p>
+					<input type="text" name="" placeholder="Username" id="user">
+					<input type="password" name="" placeholder="Password" id="pass">
+					<input type="text" placeholder="Address" id="address">
+					<p id="mobileForgotBtn" class="forgotLink" style="display:none;">Forgot Password?</p>
+					<button id="formBtn">Sign Up</button>
+					<div class="linebreak"></div>
+					<p id="switchText">Already have an account?</p>
+					<button id="changeBtn">Sign In</button>
+				</div>
+
+				<div class="loginFormComputer" id="container">
+					<div class="loginContentComputer sign-up">
+						<h1>Sign Up</h1>
+						<input type="text" name="" placeholder="Username" id="userSignUp">
+						<input type="password" name="" placeholder="Password" id="passSignUp">
+						<input type="text" placeholder="Address" id="addressSignUp">
+						<button id="signUpBtn">Sign Up</button>
+					</div>
+
+					<div class="loginContentComputer sign-in">
+						<h1>Sign In</h1>
+						<input type="text" name="" placeholder="Username" id="userSignIn">
+						<input type="password" name="" placeholder="Password" id="passSignIn">
+						<p id="forgotPasswordBtn" class="forgotLink">Forgot Password?</p>
+						<button id="signInBtn">Sign In</button>
+					</div>
+
+					<div class="switchForm">
+						<h1>Welcome to Zynne</h1>
+						<p>
+							Discover styles that define you—find your style, express yourself, and wear what makes you feel confident.
+						</p>
+						<button id="switchBtn">Sign Up</button>
+					</div>
+				</div>
+			</div>
+			<div class="forgotPasswordBox">
+				<div class="forgotContent">
+					<h2>Reset Password</h2>
+					<input type="text" id="forgotUser" placeholder="Enter Username">
+					<input type="password" id="newPass" placeholder="New Password">
+					<button id="resetPassBtn">Reset Password</button>
+					<p id="backToLogin">Back to Login</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="leftContent">
+			<p class="trademark">ELEGANCE IN EVERY THREAD</p>
+
+			<p class="intro">
+				Browse through our diverse range of top quality garments, designed to bring out the best in you while still catering to your style.
+			</p>
+
+			<button id="shopNow">Shop Now</button>
+
+			<div class="statsCount"> 
+				<div class="satisfactionCount">
+					<p class="count">9.8</p>
+					<p class="countLabel">Customer Ratings</p>
+				</div>
+
+				<div class="productCount">
+					<p class="count">1000+</p>
+					<p class="countLabel">High-Quality Products</p>
+				</div>
+
+				<div class="ratingsCount">
+					<p class="count">45,000+</p>
+					<p class="countLabel">Satisfied Customers</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="rightContent">
+			<div class="products">
+				<img class="coverPhoto" src="Cover Photo.png">
+			</div>
+		</div>
+
+	</div>
+
+	<section class="loggedIn">
+		<section class="loggedInContent">
+			<button class="closeProfile">&times;</button>
+			<div class="profilePicWrap">
+				<img id="profilePic" src="" alt="Profile Picture">
+				<button id="changePicBtn" title="Change photo">&#9998;</button>
+			</div>
+			<input type="file" id="pfpFileInput" accept="image/*" style="display:none;">
+			<h2 id="profileUsername">Username</h2>
+			<p class="profileLabel">Address</p>
+			<p id="profileAddress">—</p>
+			<div class="profileDivider"></div>
+			<button id="logoutBtn">Log Out</button>
+		</section>
+	</section>
+
+	<div class="footer">
+		
+	</div>
+
+	<script src="Main.js"></script>
+</body>
+</html>
